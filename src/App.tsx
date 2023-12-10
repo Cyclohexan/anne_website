@@ -108,9 +108,9 @@ export default function DrawerAppBar(props: Props) {
 
   return (
     <ThemeProvider theme={theme} >
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ overflowX: 'hidden', display: 'flex' }}>
         <CssBaseline />
-        <AppBar component="nav" sx={{ color: textColor, background: 'white', p: '2vh' }}>
+        <AppBar component="nav" sx={{ color: textColor, background: 'white', paddingTop: '2vh', paddingBottom: '2vh' }}>
           <Toolbar >
             <IconButton
               color="inherit"
@@ -182,7 +182,7 @@ export default function DrawerAppBar(props: Props) {
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                   <Grid sx={{ p: 15 }} item xs={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '30vw', fontSize: '1.5vim', textAlign: 'center' }}>
 
-                    <Avatar alt="vimy Sharp" sx={{ width: "20vh", height: "20vh" }} src={anne_avatar} />
+                    <Avatar alt="vimy Sharp" sx={{ width: "9em", height: "9em" }} src={anne_avatar} />
 
 
                   </Grid>
@@ -200,7 +200,7 @@ export default function DrawerAppBar(props: Props) {
                     </div>
                   </Grid>
                   <Grid item xs={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '30vw', fontSize: '1.5vim', textAlign: 'center' }}>
-                    <Avatar alt="vimy Sharp" sx={{ width: "20vh", height: "20vh" }} src={marie_avatar} />
+                    <Avatar alt="vimy Sharp" sx={{ width: "9em", height: "9em" }} src={marie_avatar} />
                   </Grid>
                 </Grid>
                 <div style={{

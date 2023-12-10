@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anne_website/static/css/main.68f8b162.css",
-    "main.js": "/anne_website/static/js/main.1af80278.js",
+    "main.css": "/anne_website/static/css/main.c6bdebad.css",
+    "main.js": "/anne_website/static/js/main.844f85bf.js",
     "static/js/787.4000bf8d.chunk.js": "/anne_website/static/js/787.4000bf8d.chunk.js",
     "static/media/vid1.mp4": "/anne_website/static/media/vid1.407fe308122204c28331.mp4",
     "static/media/img_5.jpeg": "/anne_website/static/media/img_5.2699dec66fcba6860d88.jpeg",
@@ -11,12 +11,12 @@
     "static/media/img_3.PNG": "/anne_website/static/media/img_3.c8589bfc7936bfef63d2.PNG",
     "static/media/marie_avatar.png": "/anne_website/static/media/marie_avatar.4a99c6d068432b6cfeff.png",
     "index.html": "/anne_website/index.html",
-    "main.68f8b162.css.map": "/anne_website/static/css/main.68f8b162.css.map",
-    "main.1af80278.js.map": "/anne_website/static/js/main.1af80278.js.map",
+    "main.c6bdebad.css.map": "/anne_website/static/css/main.c6bdebad.css.map",
+    "main.844f85bf.js.map": "/anne_website/static/js/main.844f85bf.js.map",
     "787.4000bf8d.chunk.js.map": "/anne_website/static/js/787.4000bf8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68f8b162.css",
-    "static/js/main.1af80278.js"
+    "static/css/main.c6bdebad.css",
+    "static/js/main.844f85bf.js"
   ]
 }

@@ -17,17 +17,17 @@ const divStyle = {
   alignItems: 'center',
   justifyContent: 'center',
   backgroundSize: 'cover',
-  height: '95vh'
+  height: '100vh'
 }
 const slideImages = [
-  {
-    pic: img1,
-  },
   {
     pic: img2,
   },
   {
     pic: img3,
+  },
+  {
+    pic: img1,
   },
 ];
 

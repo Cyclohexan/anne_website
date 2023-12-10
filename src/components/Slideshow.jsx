@@ -17,7 +17,7 @@ const divStyle = {
   alignItems: 'center',
   justifyContent: 'center',
   backgroundSize: 'cover',
-  height: '100vh'
+  height: '80vh'
 }
 const slideImages = [
   {
@@ -33,7 +33,7 @@ const slideImages = [
 
 const Slideshow = () => {
     return (
-      <div className="slide-container" style={{height: '100vh', width: '100vw'}}>
+      <div className="slide-container" style={{height: '80vh', width: '100vw'}}>
         <Slide>
          {slideImages.map((slideImage, index)=> (
             <div key={index}>

@@ -23,19 +23,12 @@ import Slideshow from './components/Slideshow'
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@emotion/react';
 
-//routing
-import { useNavigate } from "react-router";
-import { Route } from 'react-router';
-import mandala from './images/mandala2.png'
-import anne_avatar from './images/anne_avatar.png'
-import marie_avatar from './images/marie_avatar.png'
-import { Avatar, Grid, TextField } from '@mui/material';
-
 //pages
 import Contact from './pages/Contact';
 import Footer from './pages/Footer';
 
 import vid1 from './images/vid1.mp4';
+import About from './pages/About';
 
 
 const theme = createTheme({
@@ -89,7 +82,7 @@ export default function DrawerAppBar(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Anne & Marie
+        Marie & Anne 
       </Typography>
       <Divider />
       <List>
@@ -126,7 +119,7 @@ export default function DrawerAppBar(props: Props) {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              Anne & Marie
+              Marie & Anne
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map((item) => (
@@ -167,55 +160,8 @@ export default function DrawerAppBar(props: Props) {
               display: 'flex'
             }}>
 
-
-
-            <div >
-              <div style={{ display: 'flex', justifyContent: 'center', width: '100vw', backgroundColor: 'green' }}>
-
-              </div>
-
-
-
-
-              <div style={{
-              marginLeft: '15vw', marginTop: '12.5vh', marginBottom: '20vh', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '70vw', textAlign: 'center' }}>
-                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                  <Grid sx={{ p: 15 }} item xs={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '30vw', fontSize: '1.5vim', textAlign: 'center' }}>
-
-                    <Avatar alt="vimy Sharp" sx={{ width: "9em", height: "9em" }} src={anne_avatar} />
-
-
-                  </Grid>
-                  <Grid item xs={6} >
-                    <div style={{ width: '30vw', fontSize: '2vh' }}>
-                      Ich bin Anne und spiele Klavier seit dem ich 4 Jahre alt bin. Bis zu meinem 19. Lebensjahr bekam ich Unterricht und habe in meiner Kindheit vereinzelt an Wettbewerben wie beispielsweise Jungend Musiziert teilgenommen. Heute gehe ich dem Klavierspielen im Rahmen unserer Auftritte als Hobby nach. Ich freue mich, Maries Stimme mit meiner Begleitung zu unterstreichen.
-                    </div>
-
-                  </Grid>
-
-                  <Grid item xs={6}>
-                    <div style={{ width: '30vw', fontSize: '2vh' }}>
-                      Ich bin Marie und die Musik begleitet mich seit ich denken kann. Mit 6 Jahren lernte ich Klavier zu spielen. Zum Gesang kam ich dann in einer Schülerband. Nach der Schule stieg ich bis zum Studium in eine Deutsch-Rock-Band ein.
-                      Neben dem Beruf ist es heute ein toller Ausgleich mit Anne zusammen Menschen an ihvim besonderen Tag mit unserer Musik glücklich zu machen.
-                    </div>
-                  </Grid>
-                  <Grid item xs={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '30vw', fontSize: '1.5vim', textAlign: 'center' }}>
-                    <Avatar alt="vimy Sharp" sx={{ width: "9em", height: "9em" }} src={marie_avatar} />
-                  </Grid>
-                </Grid>
-                <div style={{
-                   position: 'absolute', 
-                  width: '100vw',
-                  display: 'flex',
-                  alignItems: 'center'
-                }}>
-                  <img className="mandala" style={{ width: '40vh', marginLeft: '-20vh' }} src={mandala} />
-                  <img className="mandala" style={{ width: '40vh', position: 'absolute', right: '-20vh' }} src={mandala} />
-                </div>
-              </div>
-
-            </div>
-
+            <About/>
+  
           </div>
 
           <div id="hearing">
@@ -224,10 +170,10 @@ export default function DrawerAppBar(props: Props) {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              Hörprobe
+              Hörproben
             </Typography>
             <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '60px' }}>
-              <video width="320" height="240" controls>
+              <video width="400" height="300" controls>
                 < source src={vid1} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

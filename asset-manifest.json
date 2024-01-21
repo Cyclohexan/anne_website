@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/anne_website/static/css/main.c6bdebad.css",
-    "main.js": "/anne_website/static/js/main.8edb498d.js",
+    "main.css": "/anne_website/static/css/main.cbaf60fe.css",
+    "main.js": "/anne_website/static/js/main.c3cef4a7.js",
     "static/js/787.4000bf8d.chunk.js": "/anne_website/static/js/787.4000bf8d.chunk.js",
     "static/media/vid1.mp4": "/anne_website/static/media/vid1.407fe308122204c28331.mp4",
-    "static/media/img_5.jpeg": "/anne_website/static/media/img_5.2699dec66fcba6860d88.jpeg",
+    "static/media/vid2.mp4": "/anne_website/static/media/vid2.ac89b7275d8d55c23585.mp4",
+    "static/media/vid3.mp4": "/anne_website/static/media/vid3.8d93064049a585ab5db5.mp4",
+    "static/media/img_5a.jpeg": "/anne_website/static/media/img_5a.0167dde6726649e2c62b.jpeg",
     "static/media/img_1a.png": "/anne_website/static/media/img_1a.cb746b550676073976e7.png",
-    "static/media/__anne_avatar.jpg": "/anne_website/static/media/__anne_avatar.bc3a1b4695e1a607b4c7.jpg",
-    "static/media/mandala2.png": "/anne_website/static/media/mandala2.07be8665d763b97b479d.png",
+    "static/media/img_6a.jpeg": "/anne_website/static/media/img_6a.43413a4b84f05cae7a1f.jpeg",
+    "static/media/img_7.JPG": "/anne_website/static/media/img_7.2b68c3d0d30e42916e0b.JPG",
+    "static/media/anne_avatar.jpg": "/anne_website/static/media/anne_avatar.bc3a1b4695e1a607b4c7.jpg",
     "static/media/img_3.PNG": "/anne_website/static/media/img_3.c8589bfc7936bfef63d2.PNG",
+    "static/media/mandala_black.png": "/anne_website/static/media/mandala_black.438d618b21c2f7860f69.png",
     "static/media/marie_avatar.png": "/anne_website/static/media/marie_avatar.4a99c6d068432b6cfeff.png",
     "index.html": "/anne_website/index.html",
-    "main.c6bdebad.css.map": "/anne_website/static/css/main.c6bdebad.css.map",
-    "main.8edb498d.js.map": "/anne_website/static/js/main.8edb498d.js.map",
+    "main.cbaf60fe.css.map": "/anne_website/static/css/main.cbaf60fe.css.map",
+    "main.c3cef4a7.js.map": "/anne_website/static/js/main.c3cef4a7.js.map",
     "787.4000bf8d.chunk.js.map": "/anne_website/static/js/787.4000bf8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6bdebad.css",
-    "static/js/main.8edb498d.js"
+    "static/css/main.cbaf60fe.css",
+    "static/js/main.c3cef4a7.js"
   ]
 }

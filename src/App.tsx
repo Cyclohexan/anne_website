@@ -27,8 +27,9 @@ import { ThemeProvider } from '@emotion/react';
 import Contact from './pages/Contact';
 import Footer from './pages/Footer';
 
-import vid1 from './images/vid1.mp4';
+
 import About from './pages/About';
+import Hearings from './pages/Hearings';
 
 
 const theme = createTheme({
@@ -103,7 +104,7 @@ export default function DrawerAppBar(props: Props) {
     <ThemeProvider theme={theme} >
       <Box sx={{ overflowX: 'hidden', display: 'flex' }}>
         <CssBaseline />
-        <AppBar component="nav" sx={{ color: textColor, background: 'white', paddingTop: '2vh', paddingBottom: '2vh' }}>
+        <AppBar component="nav" sx={{ color: textColor, background: 'white'}}>
           <Toolbar >
             <IconButton
               color="inherit"
@@ -140,7 +141,7 @@ export default function DrawerAppBar(props: Props) {
               keepMounted: true, // Better open performance on mobile.
             }}
             sx={{
-              display: { xs: 'block', sm: 'none' },
+              display: { xs: 'block', sm: 'block' },
               '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
             }}
           >
@@ -151,12 +152,12 @@ export default function DrawerAppBar(props: Props) {
           <div id="home">
             <Slideshow></Slideshow>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', left: '0', bottom: '0', height: '20vh', width: '100%', backgroundColor: 'white' }}>
-              <p style={{ fontSize: '3vh', textAlign: 'center' }}>Hey there! Wir sind Anne und Marie und singen für Ihre Hochzeit mit Klavierbegleitung.</p>
+              <p style={{ fontSize: '3vh', textAlign: 'center' }}>Wir sind Marie und Anne. Wir singen mit Klavierbegleitung für Ihre Hochzeit, Taufe oder andere Feierlichkeiten.</p>
             </div>
           </div>
           <div id="about"
             style={{
-              backgroundColor: '#f5e0e5',
+              backgroundColor: '#CFF0CC',
               display: 'flex'
             }}>
 
@@ -165,20 +166,7 @@ export default function DrawerAppBar(props: Props) {
           </div>
 
           <div id="hearing">
-            <Typography style={{paddingTop: '5vh', display: 'flex', justifyContent: 'center' }}
-              variant="h3"
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            >
-              Hörproben
-            </Typography>
-            <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '60px' }}>
-              <video width="400" height="300" controls>
-                < source src={vid1} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
+            <Hearings/>
           </div>
 
           <div id="contact" style={{  background: 'white' }}>

@@ -1,11 +1,14 @@
 
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import './Slideshow.css'
 
 //custom pics
 import img1 from '../images/img_3.PNG'
-import img2 from '../images/img_5.jpeg'
+import img2 from '../images/img_5a.jpeg'
 import img3 from '../images/img_1a.png'
+import img4 from '../images/img_6a.jpeg'
+import img5 from '../images/img_7.JPG'
 
 const spanStyle = {
   background: '#efefef',
@@ -28,6 +31,12 @@ const slideImages = [
   },
   {
     pic: img1,
+  },
+  {
+    pic: img4,
+  },
+  {
+    pic: img5,
   },
 ];
 

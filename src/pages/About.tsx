@@ -1,7 +1,7 @@
 import { Avatar, Grid, Typography } from "@mui/material";
-import anne_avatar from '../images/__anne_avatar.jpg'
+import anne_avatar from '../images/anne_avatar.jpg'
 import marie_avatar from '../images/marie_avatar.png'
-import mandala from '../images/mandala2.png'
+import mandala from '../images/mandala_black.png'
 
 const About = () => {
 
@@ -20,7 +20,7 @@ const About = () => {
                 marginLeft: '15vw', marginTop: '12.5vh', marginBottom: '10vh', display: 'flex', alignItems: 'center', justifyContent: 'center', width: '70vw', textAlign: 'center'
             }}>
 
-                <Grid xl={12} xs={6} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                <Grid xl={12} xs={12} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Grid xl={6} xs={12} sx={{ p: 15 }} item style={{ padding: "4em", display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', fontSize: '1.5vim', textAlign: 'center' }}>
                         <Avatar alt="Bild Anne" sx={{ width: "15em", height: "15em" }} src={anne_avatar} />
                     </Grid>

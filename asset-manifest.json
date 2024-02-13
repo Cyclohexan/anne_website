@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/anne_website/static/css/main.cbaf60fe.css",
-    "main.js": "/anne_website/static/js/main.c3cef4a7.js",
+    "main.css": "/anne_website/static/css/main.f41fa897.css",
+    "main.js": "/anne_website/static/js/main.e48ebc55.js",
     "static/js/787.4000bf8d.chunk.js": "/anne_website/static/js/787.4000bf8d.chunk.js",
     "static/media/vid1.mp4": "/anne_website/static/media/vid1.407fe308122204c28331.mp4",
     "static/media/vid2.mp4": "/anne_website/static/media/vid2.ac89b7275d8d55c23585.mp4",
@@ -14,13 +14,14 @@
     "static/media/img_3.PNG": "/anne_website/static/media/img_3.c8589bfc7936bfef63d2.PNG",
     "static/media/mandala_black.png": "/anne_website/static/media/mandala_black.438d618b21c2f7860f69.png",
     "static/media/marie_avatar.png": "/anne_website/static/media/marie_avatar.4a99c6d068432b6cfeff.png",
+    "static/media/logo.jpeg": "/anne_website/static/media/logo.88d81a46e5262f4230f0.jpeg",
     "index.html": "/anne_website/index.html",
-    "main.cbaf60fe.css.map": "/anne_website/static/css/main.cbaf60fe.css.map",
-    "main.c3cef4a7.js.map": "/anne_website/static/js/main.c3cef4a7.js.map",
+    "main.f41fa897.css.map": "/anne_website/static/css/main.f41fa897.css.map",
+    "main.e48ebc55.js.map": "/anne_website/static/js/main.e48ebc55.js.map",
     "787.4000bf8d.chunk.js.map": "/anne_website/static/js/787.4000bf8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbaf60fe.css",
-    "static/js/main.c3cef4a7.js"
+    "static/css/main.f41fa897.css",
+    "static/js/main.e48ebc55.js"
   ]
 }

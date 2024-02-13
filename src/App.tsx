@@ -31,6 +31,9 @@ import Footer from './pages/Footer';
 import About from './pages/About';
 import Hearings from './pages/Hearings';
 
+import Logo from './images/logo.jpeg';
+import Songs from './pages/Songs';
+
 
 const theme = createTheme({
   typography: {
@@ -61,6 +64,9 @@ const navItems = [{
 }, {
   text: "Hörprobe",
   key: "hearing"
+}, {
+  text: "Auswahl an Liedern",
+  key: "songs"
 }, {
   text: "Kontakt",
   key: "contact"
@@ -118,13 +124,13 @@ export default function DrawerAppBar(props: Props) {
             <Typography
               variant="h3"
               component="div"
-              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+              sx={{ p:1, flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              Marie & Anne
+              <img src={Logo} width="150px"/>
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map((item) => (
-                <Button key={item.key} sx={{ fontSize: "3vh", paddingLeft: '3vw', color: textColor }} onClick={function () { navToSection(item) }}>
+                <Button key={item.key} sx={{ fontSize: "2rem", paddingLeft: '3vw', color: textColor }} onClick={function () { navToSection(item) }}>
                   {item.text}
                 </Button>
               ))}
@@ -152,7 +158,7 @@ export default function DrawerAppBar(props: Props) {
           <div id="home">
             <Slideshow></Slideshow>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', left: '0', bottom: '0', height: '20vh', width: '100%', backgroundColor: 'white' }}>
-              <p style={{ fontSize: '3vh', textAlign: 'center' }}>Wir sind Marie und Anne. Wir singen mit Klavierbegleitung für Ihre Hochzeit, Taufe oder andere Feierlichkeiten.</p>
+              <p style={{ fontSize: '2rem', textAlign: 'center' }}>Wir sind Marie und Anne. Wir singen mit Klavierbegleitung für Ihre Hochzeit, Taufe oder andere Feierlichkeiten.</p>
             </div>
           </div>
           <div id="about"
@@ -168,6 +174,8 @@ export default function DrawerAppBar(props: Props) {
           <div id="hearing">
             <Hearings/>
           </div>
+
+
 
           <div id="contact" style={{  background: 'white' }}>
             <Contact />

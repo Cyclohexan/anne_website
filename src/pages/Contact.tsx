@@ -61,28 +61,29 @@ const ContactForm = () => {
   return (
 
     <div style={{ backgroundColor: '#CFF0CC', width: '100vw', textAlign: 'center' }}>
-      <Typography style={{ paddingTop: '15vh' }} variant="h3">
-        Gerne besprechen wir mit Ihnen gemeinsam welche Lieder wir für Sie spielen dürfen.
-      </Typography>
-
+      <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+        <Typography style={{ paddingTop: '5vh', width: "50%"}} variant="h3">
+          Gerne besprechen wir mit Ihnen gemeinsam welche Lieder wir für Sie spielen dürfen.
+        </Typography>
+      </div>
 
       <div>
         <div className="contact-form-wrapper d-flex justify-content-center">
           <form action="#" className="contact-form">
             <h5 className="title">Kontaktaufnahme</h5>
-            <p style={{ fontSize: '1.75vh' }} className="description">Schreiben Sie uns gerne eine Nachricht
+            <p style={{ fontSize: '1.5rem' }} className="description">Schreiben Sie uns gerne eine Nachricht
             </p>
             <div>
-              <input style={{ fontSize: '1.75vh' }} type="text" className="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required />
+              <input style={{ fontSize: '1.5rem' }} type="text" className="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required />
             </div>
             <div>
-              <input style={{ fontSize: '1.75vh' }} type="email" className="form-control rounded border-white mb-3 form-input" placeholder="Email" required />
+              <input style={{ fontSize: '1.5rem' }} type="email" className="form-control rounded border-white mb-3 form-input" placeholder="Email" required />
             </div>
             <div>
-              <textarea style={{ fontSize: '1.75vh' }} id="message" className="form-control rounded border-white mb-3 form-text-area" rows={5} cols={30} placeholder="Message" required></textarea>
+              <textarea style={{ fontSize: '1.5rem' }} id="message" className="form-control rounded border-white mb-3 form-text-area" rows={5} cols={30} placeholder="Message" required></textarea>
             </div>
             <div className="submit-button-wrapper">
-              <input style={{ fontSize: '1.75vh' }} type="submit" value="Senden" />
+              <input style={{ fontSize: '1.5rem' }} type="submit" value="Senden" />
             </div>
           </form>
         </div>

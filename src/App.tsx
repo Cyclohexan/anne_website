@@ -175,7 +175,9 @@ export default function DrawerAppBar(props: Props) {
             <Hearings/>
           </div>
 
-
+          <div id="songs">
+            <Songs/>
+          </div>
 
           <div id="contact" style={{  background: 'white' }}>
             <Contact />

@@ -63,7 +63,7 @@ const ContactForm = () => {
     <div style={{ backgroundColor: '#CFF0CC', width: '100vw', textAlign: 'center' }}>
       <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
         <Typography style={{ paddingTop: '5vh', width: "50%"}} variant="h3">
-          Gerne besprechen wir mit Ihnen gemeinsam welche Lieder wir für Sie spielen dürfen.
+        Gerne besprechen wir mit Ihnen gemeinsam, welche Lieder wir für Sie spielen dürfen.
         </Typography>
       </div>
 

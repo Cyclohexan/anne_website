@@ -14,7 +14,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import './App.css'
+import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //custom pages
 import Slideshow from './components/Slideshow'
@@ -34,6 +35,9 @@ import Hearings from './pages/Hearings';
 import Logo from './images/logo.jpeg';
 import Songs from './pages/Songs';
 
+import { mobileCheck } from './util/mobileCheck';
+
+const desktop = !mobileCheck();
 
 const theme = createTheme({
   typography: {
@@ -158,7 +162,7 @@ export default function DrawerAppBar(props: Props) {
           <div id="home">
             <Slideshow></Slideshow>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', left: '0', bottom: '0', height: '20vh', width: '100%', backgroundColor: 'white' }}>
-              <p style={{ fontSize: '2rem', textAlign: 'center' }}>Wir sind Marie und Anne. Wir singen mit Klavierbegleitung für Ihre Hochzeit, Taufe oder andere Feierlichkeiten.</p>
+              <p style={{ fontSize: desktop ? '2rem' : '1.5rem', textAlign: 'center' }}>Wir sind Marie und Anne. Wir singen mit Klavierbegleitung für Ihre Hochzeit, Taufe oder andere Feierlichkeiten.</p>
             </div>
           </div>
           <div id="about"
@@ -188,4 +192,5 @@ export default function DrawerAppBar(props: Props) {
       </Box>
     </ThemeProvider>
   );
+
 }

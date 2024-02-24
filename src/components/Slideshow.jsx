@@ -4,45 +4,54 @@ import 'react-slideshow-image/dist/styles.css'
 import './Slideshow.css'
 
 //custom pics
-import img1 from '../images/img_3.PNG'
+import img1 from '../images/IMG_9373.PNG'
 import img2 from '../images/img_5a.jpeg'
 import img3 from '../images/img_1a.png'
 import img4 from '../images/img_6a.jpeg'
 import img5 from '../images/img_7.JPG'
+
+import mobile_img1 from '../images/mobile/1.jpeg';
+import mobile_img2 from '../images/mobile/2.JPG';
+import mobile_img3 from '../images/mobile/3.PNG';
+
+import {mobileCheck} from '../util/mobileCheck';
 
 const spanStyle = {
   background: '#efefef',
   color: '#000000'
 }
 
+const desktop = !mobileCheck();
+
 const divStyle = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   backgroundSize: 'cover',
-  height: '80vh'
+  height: desktop ? '80vh' : '60vh'
 }
+
 const slideImages = [
   {
-    pic: img2,
+    pic: desktop ? img1 : mobile_img1,
   },
   {
-    pic: img3,
+    pic: desktop ? img2 : mobile_img2,
   },
   {
-    pic: img1,
-  },
-  {
-    pic: img4,
-  },
-  {
-    pic: img5,
-  },
+    pic: desktop ? img4 : mobile_img3,
+  }
 ];
+
+if (desktop) {
+  slideImages.push({
+    pic: img5,
+  });
+}
 
 const Slideshow = () => {
     return (
-      <div className="slide-container" style={{height: '80vh', width: '100vw'}}>
+      <div className="slide-container" style={{height: desktop ? '80vh' : '60vh', width: '100vw'}}>
         <Slide>
          {slideImages.map((slideImage, index)=> (
             <div key={index}>

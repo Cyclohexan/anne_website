@@ -100,6 +100,7 @@ const Songs = () => {
             <Typography style={{ paddingBottom: '5vh', display: 'flex', justifyContent: 'center' }}
                 variant="h4"
                 component="div"
+                fontSize="1.75rem"
                 sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
                 Auf Wunsch auch gerne weitere Lieder.

@@ -2,6 +2,11 @@ import { Avatar, Grid, Typography } from "@mui/material";
 import anne_avatar from '../images/anne_avatar.jpg'
 import marie_avatar from '../images/marie_avatar.png'
 import mandala from '../images/mandala_black.png'
+import mandala_right from '../images/mandala_right.png'
+
+import { mobileCheck } from "../util/mobileCheck";
+
+const desktop = !mobileCheck();
 
 const About = () => {
 
@@ -25,14 +30,14 @@ const About = () => {
                         <Avatar alt="Bild Marie" sx={{ width: "15em", height: "15em" }} src={marie_avatar} />
                     </Grid>
                     <Grid item xl={6} xs={12} style={{ display: 'flex', alignItems: 'center'}}>
-                        <div style={{ fontSize: '1.5rem' }}>
+                        <div style={{ fontSize: desktop ? '1.75rem' : '1.4rem' }}>
                         Ich bin Marie und die Musik begleitet mich seit ich denken kann. Mit 6 Jahren lernte ich Klavier zu spielen. Zum Gesang kam ich dann in einer Schülerband. Nach der Schule stieg ich bis zum Studium in eine Deutsch-Rock-Band ein.
                             Neben dem Beruf ist es heute ein toller Ausgleich mit Anne zusammen Menschen an ihvim besonderen Tag mit unserer Musik glücklich zu machen.
                             
                         </div>
                     </Grid>
                     <Grid item order={{ xs: 4, xl: 3 }} xl={6} xs={12} style={{ display: 'flex', alignItems: 'center'}}>
-                        <div style={{ fontSize: '1.5rem' }}>
+                        <div style={{ fontSize: desktop ? '1.75rem' : '1.4rem' }}>
                         Ich bin Anne und spiele Klavier seit dem ich 4 Jahre alt bin. Bis zu meinem 19. Lebensjahr bekam ich Unterricht und habe in meiner Kindheit vereinzelt an Wettbewerben wie beispielsweise Jungend Musiziert teilgenommen. Heute gehe ich dem Klavierspielen im Rahmen unserer Auftritte als Hobby nach. Ich freue mich, Maries Stimme mit meiner Begleitung zu unterstreichen.
                         </div>
                     </Grid>
@@ -47,7 +52,7 @@ const About = () => {
                     alignItems: 'center'
                 }}>
                     <img className="mandala" style={{ width: '40vh', marginLeft: '-20vh' }} src={mandala} />
-                    <img className="mandala" style={{ width: '40vh', position: 'absolute', right: '-20vh' }} src={mandala} />
+                    <img className="mandala" style={{ width: '20vh', position: 'absolute', right: '0' }} src={mandala_right} />
                 </div>
             </div>
         </div>

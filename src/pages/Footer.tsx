@@ -36,11 +36,11 @@ const Footer = () => {
                         <InstagramIcon fontSize="large" />
                     </div>
                 </div>
-                <Link href="Datenschutzerklärung.html" style={{ paddingRight: "10px" }} color="inherit">
+                <Link href="/datenschutz" style={{ paddingRight: "10px" }} color="inherit">
                     Datenschutzerklärung
                 </Link>
 
-                <Link href="Impressum.html" style={{ paddingLeft: "10px" }} color="inherit">
+                <Link href="/impressum" style={{ paddingLeft: "10px" }} color="inherit">
                     Impressum
                 </Link>
             </div>

@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {mobileCheck} from './util/mobileCheck';
+import { mobileCheck } from './util/mobileCheck';
 import Datenschutz from './pages/Datenschutz';
 import Impressum from './pages/Impressum';
+import Navigation from './pages/Navigation';
 
 const desktop = !mobileCheck();
 
@@ -14,14 +15,17 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <Router>
-  <Routes>
-    <Route path="/" element={<App/>} />
-    <Route path="/anne_website" element={<App/>} />
-    <Route path="/impressum" element={<Impressum/>} />
-    <Route path="/datenschutz" element={<Datenschutz/>} />
-  </Routes>
-</Router>
+  <div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/anne_website" element={<App />} />
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/datenschutz" element={<Datenschutz />} />
+      </Routes>
+    </Router>
+  </div>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
